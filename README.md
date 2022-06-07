@@ -8,6 +8,10 @@
 
 ## ✔️ What I need to study is
 - [ ] CSS, SASS
+  - [x] Flexbox
+  - [ ] Grid
+  - [ ] Sass
+  - [ ] Clone
 - [ ] Javascript
 - [ ] React.js
 - [ ] Redux
