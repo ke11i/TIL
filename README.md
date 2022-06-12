@@ -10,7 +10,7 @@
 - [ ] CSS, SASS
   - [x] [Flexbox](./CSS/FLEXBOX.md)
   - [x] [Grid](./CSS/GRID.md)
-  - [ ] [SCSS](./CSS/SCSS.md)
+  - [x] [SCSS](./CSS/SCSS.md)
   - [ ] Clone
 - [ ] Javascript
 - [ ] React.js
