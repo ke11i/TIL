@@ -8,9 +8,9 @@
 
 ## ✔️ What I need to study is
 - [ ] CSS, SASS
-  - [x] Flexbox
-  - [ ] Grid
-  - [ ] Sass
+  - [x] [Flexbox](./CSS/FLEXBOX.md)
+  - [x] [Grid](./CSS/GRID.md)
+  - [ ] [SCSS](./CSS/SCSS.md)
   - [ ] Clone
 - [ ] Javascript
 - [ ] React.js

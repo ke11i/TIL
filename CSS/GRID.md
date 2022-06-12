@@ -1,5 +1,5 @@
 # GRID
-[🌸 GRID GARDEN](https://cssgridgarden.com/#ko)
+[실습][🌸 Grid Garden](https://cssgridgarden.com/#ko)
 
 ## ✔️ GRID를 사용해야하는 이유
 Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼 정렬되는 형태를 얻게된다.
@@ -26,7 +26,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
   <div class="child">5</div>
 </div>
 ```
-![flexbox의 문제](./../asset/grid_01.png)
+![flexbox의 문제](./asset/grid_01.png)
 
 #### 즉, flexbox에서 좌우배치, 중앙배치는 쉽지만 grid형태를 만드는 것은 어렵다. 순차적으로 왼쪽 정렬되어 나열되는 grid 화면은 어떻게 그릴 수 있을까?
 
@@ -47,7 +47,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
 
 #### 🌸 **`grid-template-rows`**: grid row의 개수/넓이를 정의한다.
 
-![grid 레이아웃](./../asset/grid_02.png)
+![grid 레이아웃](./asset/grid_02.png)
 
 ```css
 .continer{
@@ -68,7 +68,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
 
 ### 2) grid 사이의 간격을 조절하는 방법
 
-![grid 레이아웃](./../asset/grid_03.png)
+![grid 레이아웃](./asset/grid_03.png)
 
 #### 🌸 **`column-gap`**: grid column 사이의 간격을 조절한다.
 ```css
@@ -112,7 +112,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
 - 줄마다 따옴표로 구분
 - 사각형으로 이어진 영역에만 유효('ㄱ'로 이어진 영역엔 적용되지 않음)
 - 비어있는 영역을 표기하고 싶을 땐 `.`을 사용한다.
-  ![grid 레이아웃](./../asset/grid_05.png)
+  ![grid 레이아웃](./asset/grid_05.png)
 
   ```css
   .continer{
@@ -176,7 +176,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
 ```
 위 코드를 돌려보면 자동으로 grid 영역이 채워지는 것을 확인할 수 있다.
 
-![grid 레이아웃](./../asset/grid_04.png)
+![grid 레이아웃](./asset/grid_04.png)
 
 
 ### 4) column과 row의 정렬 위치를 지정해서 정렬해보자.
@@ -199,7 +199,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
     grid-column-end: 3;
   }
   ```
-  ![grid 레이아웃](./../asset/grid_06.png)
+  ![grid 레이아웃](./asset/grid_06.png)
 
 #### 🌸 **`grid-row-start: n`**: n번째 row에서 시작
 #### 🌸 **`grid-row-end: m`**: m번째 row의 시작 이전(n-1번째)에서 끝남을 정의
@@ -234,7 +234,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
 }
 ```
 
-![grid 레이아웃](./../asset/grid_07.png)
+![grid 레이아웃](./asset/grid_07.png)
 
 <br />
 
@@ -283,6 +283,14 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
   grid-column: span 4;
 }
 ```
+> ### [shortcut] `grid-area: {grid-row-start} {grid-column-start} { grid-row-end} {grid-column-end}`
+> ```css
+> .header{
+>   grid-area: 1 / 2 / 4 / -1;
+> }
+> ```
+> ![grid 레이아웃](./asset/grid_21.png)
+
 
 <br/>
 
@@ -294,7 +302,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
     grid-template-columns: repeat(4, 1fr);
   }
 ```
-![grid 레이아웃](./../asset/grid_08.png)
+![grid 레이아웃](./asset/grid_08.png)
 
 - `fraction`은 grid로 반응형 레이아웃을 그릴때 유용하다.
 > ```css
@@ -303,7 +311,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
 >   grid-template-columns: 4fr 1fr 1fr 1fr;
 > }
 > ```
-> ![grid 레이아웃](./../asset/grid_09.png)
+> ![grid 레이아웃](./asset/grid_09.png)
 
 
 #### ※ grid의 높이를 지정하지 않으면 기본적으로 높이는 0이다. 만약 row에 fraction을 사용하게 되면, 사용가능한 높이 전체(0px)를 잡게되므로 grid 아이템이 화면에서 사라진다. 그러므로 row에 fraction을 쓰고 싶다면 반드시 grid container에 height를 설정해주자!
@@ -352,7 +360,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
   </div>
 </body>
 ```
-![grid 레이아웃](./../asset/grid_10.png)
+![grid 레이아웃](./asset/grid_10.png)
 
 <br />
 
@@ -376,7 +384,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
   align-items: end;
 }
 ```
-![grid 레이아웃](./../asset/grid_11.png)
+![grid 레이아웃](./asset/grid_11.png)
 
 > [주의]grid item의 크기가 지정된 경우, stretch는 적용되지 않는다!
 > ```css
@@ -390,7 +398,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
 >   height: 50px;
 > }
 > ```
-> ![grid 레이아웃](./../asset/grid_12.png)
+> ![grid 레이아웃](./asset/grid_12.png)
 
 #### 🌸[Shortcut] `place-items: {align-items} {justify-items}`
 ```css
@@ -399,7 +407,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
   place-items: start center;
 }
 ```
-![grid 레이아웃](./../asset/grid_13.png)
+![grid 레이아웃](./asset/grid_13.png)
 
 <br />
 
@@ -415,7 +423,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
 >   background-color: black;
 > }
 > ```
-> ![grid 레이아웃](./../asset/grid_14.png)
+> ![grid 레이아웃](./asset/grid_14.png)
 
 #### 🌸 `align-content`: gird 자체의 **수직정렬**을 지정한다.
 - start: grid를 container의 시작점에 정렬
@@ -435,7 +443,7 @@ Flexbox를 이용해서 3x2 화면을 그린다고 생각해보자. 아래처럼
   background-color: black;
 }
 ```
-![grid 레이아웃](./../asset/grid_15.png)
+![grid 레이아웃](./asset/grid_15.png)
 
 <br />
 
@@ -492,17 +500,17 @@ auto-fit
   <div>4</div>
 </div>
 ```
-![grid 레이아웃](./../asset/grid_17.png)
+![grid 레이아웃](./asset/grid_17.png)
 
 #### 🌸 `auto-fill`: 정해진 크기 n에 맞춰 가능한 많은 빈 column&row를 만든다.(빈공간을 동일한 크기n의 empty cell로 가득 채움)
 - repeat(auto-fill, minmax(n, 1fr));
 - grid cell의 개수를 정확하게 모르지만 모두 동일한 크기로 보여져야할 때 유용하게 사용가능하다. 
- ![grid 레이아웃](./../asset/grid_16.png)
+ ![grid 레이아웃](./asset/grid_16.png)
 
 #### 🌸 `auto-fit`: grid 영역에 맞춰서 현재 cell의 크기를 늘려준다.
 - repeat(auto-fit, minmax(n, 1fr));
 - 화면 크기에 맞춰서 반응하므로, 반응형에서 가장 많이 사용된다.
- ![grid 레이아웃](./../asset/grid_18.png)
+ ![grid 레이아웃](./asset/grid_18.png)
 
 <br/>
 
@@ -535,12 +543,12 @@ auto-fit
   <div class="item">This is a very long text</div>
 </div>
 ```
-![grid 레이아웃](./../asset/grid_19.png)
+![grid 레이아웃](./asset/grid_19.png)
 
 <br/>
 
 
-#### [활용] max-content와 repeat, minmax 활용하기
+### [활용] max-content와 repeat, minmax 활용하기
 ```html
 <div class="grid">
   <div class="item">This is a very long text</div>
@@ -558,5 +566,5 @@ auto-fit
   grid-auto-rows: 100px;
 }
 ```
-![grid 레이아웃](./../asset/grid_20.png)
+![grid 레이아웃](./asset/grid_20.png)
 
